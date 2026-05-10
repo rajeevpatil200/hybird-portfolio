@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rajeev Patil | Portfolio</title>
+
+<style>
+body {
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+.navbar {
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+.navbar a {
+color:#e2e8f0;
+margin:10px;
+text-decoration:none;
+}
+
+/* SECTION */
+.section {
+padding:60px 10%;
+display:none;
+}
+
+/* HEADINGS */
+h1 {
+color:#38bdf8;
+}
+
+/* CARDS */
+.card {
+background:#1e293b;
+padding:20px;
+margin:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+/* GRID */
+.grid {
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+gap:20px;
+}
+
+/* IMAGE */
+img {
+border-radius:15px;
+}
+
+/* 🔥 LINK BUTTON STYLE */
+a {
+background:black;
+color:white !important;
+padding:8px 15px;
+border-radius:8px;
+font-weight:bold;
+display:inline-block;
+margin-top:10px;
+text-decoration:none;
+}
+
+a:hover {
+background:#facc15;
+color:black !important;
+}
+</style>
+
+<script>
+function showSection(id) {
+let sections = document.getElementsByClassName("section");
+for (let s of sections) s.style.display="none";
+document.getElementById(id).style.display="block";
+}
+</script>
+
+</head>
+
+<body onload="showSection('home')">
+
+<!-- NAVBAR -->
+<div class="navbar">
+<b style="color:#f60505;">👨‍💻 RAJEEV PATIL</b>
+
+<div>
+<a href="#" onclick="showSection('home')">👤</a>
+<a href="#" onclick="showSection('about')">💻</a>
+<a href="#" onclick="showSection('skills')">🧠</a>
+<a href="#" onclick="showSection('tech')">⚙️</a>
+<a href="#" onclick="showSection('education')">🎓</a>
+<a href="#" onclick="showSection('projects')">🚀</a>
+<a href="#" onclick="showSection('internships')">💼</a>
+<a href="#" onclick="showSection('research')">📄</a>
+<a href="#" onclick="showSection('certifications')">📜</a>
+<a href="#" onclick="showSection('contact')">📞</a>
+</div>
+</div>
+
+<!-- HOME -->
+<div id="home" class="section">
+<center>
+<img src="Professional Photo.jpg" width="200"><br><br>
+<h1>👨‍💻 Rajeev Patil</h1>
+<p>🤖 AI/ML Engineer</p>
+<p>🚀 Building AI solutions for real-world problems</p>
+</center>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="section">
+<h1>💻 About Me</h1>
+<div class="card">
+Highly motivated Computer Engineering student passionate about AI, ML and Data Science.
+</div>
+</div>
+
+<!-- SKILLS -->
+<div id="skills" class="section">
+<h1>🧠 Skills</h1>
+<div class="grid">
+<div class="card">💻 C++, Python, Java</div>
+<div class="card">🤖 Machine Learning</div>
+<div class="card">📊 Data Science</div>
+</div>
+</div>
+
+<!-- TECH STACK -->
+<div id="tech" class="section">
+<h1>⚙️ Tech Stack</h1>
+<div class="grid">
+<div class="card">🐍 Python</div>
+<div class="card">📊 Tableau</div>
+<div class="card">📈 Power BI</div>
+<div class="card">🧠 Gen AI</div>
+<div class="card">💬 Chatbots</div>
+</div>
+</div>
+
+<!-- EDUCATION -->
+<div id="education" class="section">
+<h1>🎓 Education</h1>
+<div class="card">🏫 B.Tech MIT AOE – CGPA: 7.55</div>
+<div class="card">📘 12th MIT ACSC – 59.17%</div>
+<div class="card">📗 10th Priyadarshani – 78.20%</div>
+</div>
+
+<!-- PROJECTS -->
+<div id="projects" class="section">
+<h1>🚀 Projects</h1>
+
+<div class="grid">
+
+<div class="card">
+<h3>🧠 Multiple Face Recognition using Genetic Algorithm</h3>
+<a href="https://drive.google.com/file/d/1HA0SU10NHL3jjM60tYDygLLBMelXI_-5/view">📄 View Project</a>
+</div>
+
+<div class="card">
+<h3>🤖 AI Powered Story Generator</h3>
+<a href="https://drive.google.com/file/d/1AfA45rnQ_du8gUro-kMyTwtu2vTlKU1b/view">📄 View Project</a>
+</div>
+
+<div class="card">
+<h3>📊 Literature Survey on ML Techniques</h3>
+<a href="https://drive.google.com/file/d/17NnciVKbWKQdHixuCHTcq7PZRr93ODaI/view">📄 View Paper</a>
+</div>
+
+</div>
+</div>
+
+<!-- INTERNSHIPS -->
+<div id="internships" class="section">
+<h1>💼 Internships</h1>
+
+<div class="card">💼 AI/ML Intern – MyJobGrow</div>
+
+<div class="card">
+💼 Data Analytics Intern – ZIDIO Development<br>
+🧠 CNN & LSTM based Image Captioning
+</div>
+
+</div>
+
+<!-- RESEARCH -->
+<div id="research" class="section">
+<h1>📄 Research</h1>
+
+<div class="card">
+📊 Comparative Analysis of Machine Learning Techniques (IJRASET 2026)<br>
+<a href="https://drive.google.com/file/d/1lfMvAHkCHOpHUFyEsQQQUO8QDeE6qbMB/view">📄 View Paper</a>
+</div>
+
+</div>
+
+<!-- CERTIFICATIONS -->
+<div id="certifications" class="section">
+<h1>📜 Certifications</h1>
+
+<div class="card">
+<a href="https://drive.google.com/file/d/153grmMmnsD2KJmOZcSvzno2KiJ6COP6w/view">📜 AICTE Internship</a>
+</div>
+
+<div class="card">
+<a href="https://drive.google.com/file/d/1USTUm5VVyINVrENs1CB7cm62MDFHAZ0N/view">📜 CISCO Cyber Security</a>
+</div>
+
+<div class="card">
+<a href="https://drive.google.com/file/d/1usk690aXhqj6bFvP5wq24OSrmDOTfHi-/view">📜 NPTEL Certificate</a>
+</div>
+
+<div class="card">
+<a href="https://drive.google.com/file/d/1sxoqm1IX0NGXrDmha0x8GxLpLrXPRfGj/view">📜 Blockchain Technology</a>
+</div>
+
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+<h1>📞 Contact</h1>
+
+<div class="card">
+📧 rajeev.patil@mitaoe.ac.in<br>
+📱 +91-9022831757<br><br>
+
+🔗 <a href="https://www.linkedin.com/in/rajeev-patil-86a896264">LinkedIn</a><br><br>
+💻 <a href="https://github.com/rajeevpatil200/literate-octo-carnival.git">GitHub</a><br><br>
+
+📄 <a href="https://drive.google.com/file/d/1pSSGKHZGhJjY4jDeFleVWRiTbDMnX1f7/view">Resume</a>
+</div>
+
+</div>
+
+</body>
+</html>
